@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.lenovo.finalgp_test1.ToursActivity"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar_car"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/gradient_toolbar"/>
+
+    <TextView
+        android:id="@+id/search_tour_TV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Search Tours"
+        android:textColor="#FFF"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:textSize="20sp"/>
+
+
+    <Spinner
+        android:id="@+id/spinner_destinationForTours"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="132dp"
+        android:background="@drawable/transparent_edge"/>
+
+    <TextView
+        android:id="@+id/Destination_Tours_TV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="50dp"
+        android:text="Destination"
+        android:textSize="24sp"
+        android:textStyle="bold|italic"
+        android:textColor="#2986ae"
+        android:layout_alignBottom="@+id/spinner_destinationForTours"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/searchToursBtn"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="250dp"
+        android:layout_marginLeft="60dp"
+        android:background="@drawable/orangesliderr"
+        android:text="Search"
+        android:textAllCaps="false"
+        android:textColor="#FFF"
+        android:textSize="20sp"
+        android:layout_centerHorizontal="true"/>
+
+</RelativeLayout>

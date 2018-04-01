@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.lenovo.finalgp_test1.HotelActivity"
+    android:orientation="horizontal"
+    android:background="#FFF">
+
+    <Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#2986ae"
+        tools:targetApi="lollipop" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Search Hotel"
+        android:textColor="#FFF"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:textSize="20sp"/>
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/searchCV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbar"
+        android:layout_marginTop="20dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_search_black_24dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"/>
+
+        <Spinner
+            android:id="@+id/searchCountryBtn"
+            android:layout_width="150dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="50dp"
+            android:background="@drawable/transparent_edge"
+            android:entries="@array/FromSpinner"/>
+
+       ]
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/nightsCV"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_below="@id/searchCV">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/checkinBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:text="Check-in"
+            android:textAllCaps="false"/>
+     <RelativeLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/nightsTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nights"
+                android:layout_marginLeft="50dp"/>
+
+            <TextView
+                android:id="@+id/nomONightsTV"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_below="@id/nightsTV"
+                android:layout_marginLeft="60dp"
+                android:layout_marginTop="5dp"/>
+     </RelativeLayout>
+
+        <Button
+            android:id="@+id/checkoutBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Check-out"
+            android:background="@null"
+            android:textAllCaps="false"
+            android:layout_marginLeft="50dp"/>
+
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/guestCV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/nightsCV"
+        android:layout_marginTop="10dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/dropUpIcon"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/ic_arrow_drop_up_black_24dp"
+            android:layout_marginLeft="10dp"/>
+        <TextView
+            android:id="@+id/numOfPerson"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1"
+            android:layout_marginLeft="5dp"
+            android:textColor="#0d38a5"/>
+        <ImageButton
+            android:id="@+id/dropDownIcon"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/ic_arrow_drop_down_black_24dp"
+            android:layout_marginLeft="5dp"/>
+        <TextView
+            android:id="@+id/Person-per-room"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_below="@id/nightsCV"
+           android:background="@null"
+           android:text="Person/s"
+           android:textAllCaps="false"
+            android:layout_marginLeft="20dp"
+            android:textColor="#0d38a5"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAllCaps="false"
+            android:text="(per room)"
+            android:layout_marginLeft="20dp"/>
+    </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/RatingCV"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_below="@id/guestCV"
+        android:layout_marginTop="10dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/pricerangeTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Price Range"
+            android:textColor="#0d38a5"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"/>
+
+        <SeekBar
+            android:id="@+id/seekBar1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:min="100"
+            android:max="1000"/>
+        <TextView
+            android:id="@+id/startRatingTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#0d38a5"
+            android:text="Start Rating"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"/>
+        <RatingBar
+            android:id="@+id/rating_hotels"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="?android:attr/ratingBarStyleSmall"
+            android:numStars="5"
+            android:stepSize="0.1"
+            android:isIndicator="true"
+            android:layout_marginTop="1dp"
+            android:layout_marginLeft="10dp"
+            android:clickable="true"/>
+
+    </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+
+    <Button
+        android:id="@+id/SearchBtn"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="55dp"
+        android:layout_marginTop="350dp"
+        android:background="@drawable/orangesliderr"
+        android:text="Search"
+        android:textAllCaps="false"
+        android:textColor="#FFF"
+        android:textSize="15sp"
+        android:layout_centerHorizontal="true"/>
+
+
+</RelativeLayout>

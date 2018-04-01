@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.lenovo.finalgp_test1.ReserveCarActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar_car"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="@drawable/gradient_toolbar"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Available Cars"
+        android:textColor="#FFF"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:textSize="20sp"/>
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_marginTop="5dp"
+        android:layout_below="@id/toolbar_car">
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="5dp"
+        android:src="@drawable/ic_more_vert_black_24dp"/>
+
+        <TextView
+            android:id="@+id/car_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="G102"
+            android:layout_marginTop="22dp"
+            android:layout_marginLeft="40dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="$ 85.99"
+            android:textSize="20sp"
+            android:layout_marginLeft="230dp"
+            android:layout_marginTop="30dp"
+            android:textColor="#ff7011"/>
+
+        <Button
+            android:id="@+id/ReserveCarBtn"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="310dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/orangesliderr"
+            android:text="Book"
+            android:textAllCaps="false"
+            android:textColor="#FFF"
+            android:textSize="20sp" />
+    </android.support.v7.widget.CardView>
+
+
+</RelativeLayout>
